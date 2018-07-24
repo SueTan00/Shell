@@ -1,0 +1,8 @@
+$ mkdir DIRNAME             create a new directory called DIRNAME
+$ cd DIRNAME                change to the directory called DIRNAME
+$ ls                        see a list of contents of a directory
+$ touch FILENAME            create a new file called FILENAME
+$ rm FILENAME               remove(delete) a file called FILENAME
+$ rm -r DIRNAME             remove(delete) the directory including all the files inside it
+$ unzip *.zip               extract compressed file
+$ -q                        go back from the page 
