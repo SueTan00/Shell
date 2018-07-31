@@ -1,8 +1,53 @@
+[tab]                       auto-completion
+[Ctrl+c]                    compulsively termitate current program
+[Ctrl+s]                    pause (press any other button to continue)
+[Ctrl+z]                    run in background 
+$ fg                        running back to the foreground
+[Ctrl+a]                    move cursor to the start
+[Ctrl+e]                    move cursor to the end
+[Ctrl+k]                    delete all the content from cursor to the end
+[Up]                        the command used before
+
+wildcard: 
+*                           matching 0 or many characters
+?                           matching 1 character
+[list]                      matching any character in the list given
+[c1-c2]                     matching any character from c1-c2
+{string1,string2,...}       matching any string given 
+
+FILE/DIRECTORY:
 $ mkdir DIRNAME             create a new directory called DIRNAME
+$ mkdir -p DIRNAME1/DIRNAME2/DIRNAME3   create a multi-level directory
 $ cd DIRNAME                change to the directory called DIRNAME
 $ ls                        see a list of contents of a directory
 $ touch FILENAME            create a new file called FILENAME
+$ touch FILENAME{1..10}     create multiple files named FILENAME1,FILENAME2..FILENAME10
+$ cp FILENAME /user/local/bin copy file FILENAME into that given directory
+$ cp -r DIR1 DIR2           copy one directory DIR1 to another DIR2
 $ rm FILENAME               remove(delete) a file called FILENAME
 $ rm -r DIRNAME             remove(delete) the directory including all the files inside it
+$ rm -f FILENAME            remove FILENAME who only has read authority 
+$ mv FILENAME DIRNAME       move FILENAME to directory DIRNAME  
+$ mv FILENAME FILENAME1     change file name from FILENAME into FILENAME1
+$ cat FILENAME              read and print all the content in file called FILENAME in ascendent order
+$ cat -n FILENAME           display the line number as well
+$ tac FILENAME              read and print all the content in file called FILENAME in descendent order
+$ more/less FILENAME        paged view the content of FILENAME（ENTER: scroll the content downward by one row; SPACE: by one screen）
+$ head FILENAME             only display few lines at the start of the file
+$ tail FILENAME             only display few lines at the end of the file
+$ tail -n 3 FILENAME        only display 3 lines at the end of the file
+
+$ sudo chown USERNAME FILENAME   move file to another user called USERNAME
+$ chmod g/o/u +/- r/w/x FILENAME   change authority about the FILENAME: g--group, o--others, u--user, r--read, w--write, x--execute
+$ cd..                      change directory to up one level
+$ cd ~                      go to home directory
+$ pwd                       get the currently absolute path
+
 $ unzip *.zip               extract compressed file
 $ -q                        go back from the page 
+$ sudo                      to gain root authority
+$ sudo adduser USERNAME     to create new user named USERNAME
+$ su USERNAME               switch to another user called USERNAME
+$ deluser USERNAME          delete user
+[Ctrl+d]                    exit the logged in user
+
