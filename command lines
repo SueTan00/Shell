@@ -51,3 +51,31 @@ $ su USERNAME               switch to another user called USERNAME
 $ deluser USERNAME          delete user
 [Ctrl+d]                    exit the logged in user
 
+
+VIM
+$ vim FILENAME.txt            open FILENAME or create a new file named FILENAME if it doesn't exist.
+After you execute the command line above, you are in vim NORMAL mode.
+change the mode into INSERT mode:
+  $ i                           edit the place cursor is on
+  $ I                           insert at the end of the line
+  $ A                           insert at the beginning of the line
+  $ a                           insert after the cursor
+change the mode into COMMAND mode:
+  $ :                           change the mode to COMMAND mode
+in COMMAND mode, you can exit the VIM and save files:
+  : w[ENTER]                    save the file
+  : w FILENAME'[ENTER]          save the file as name FILENAME'
+  : w <SAVING PATH>             save to SAVING PATH
+  : wq[ENTER]                   save and exit
+  : q![ENTER]                   compulsorily exit but don't save
+  : q[ENTER]                    exit but don't save
+ in NORMAL mode, you can also exit the VIM and delete the content:
+  $ Shift+zz                     save and exit
+  $ x                            delete the character the cursor is on
+  $ X                            delete the character before the cursor
+  $ dd                           delete all line
+  $ dw                           delete a word
+  $ d$                           delete to the end of the line
+  $ d^                           delete to the beginning of the line
+  
+
