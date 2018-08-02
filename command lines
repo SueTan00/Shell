@@ -69,13 +69,18 @@ in COMMAND mode, you can exit the VIM and save files:
   : wq[ENTER]                   save and exit
   : q![ENTER]                   compulsorily exit but don't save
   : q[ENTER]                    exit but don't save
+  : set nu[ENTER]               show line number
  in NORMAL mode, you can also exit the VIM and delete the content:
-  $ Shift+zz                     save and exit
-  $ x                            delete the character the cursor is on
-  $ X                            delete the character before the cursor
-  $ dd                           delete all line
-  $ dw                           delete a word
-  $ d$                           delete to the end of the line
-  $ d^                           delete to the beginning of the line
-  
-
+   Shift+zz                     save and exit
+   x                            delete the character the cursor is on
+   X                            delete the character before the cursor
+   dd                           delete all line
+   dw                           delete a word
+   d$                           delete to the end of the line
+   d^                           delete to the beginning of the line
+   .                            repeat the action last command did
+   N[command]                   repeat the [command] N times, e.g. 10x means delete 10 consecutive characters
+   nG(n+Shift+g)                cursor goes to the nth line
+   gg                           cursor goes to the first line
+   G(shift+g)                   cursor goes to the last line
+   Ctrl+o                       cursor goes back to the last position
